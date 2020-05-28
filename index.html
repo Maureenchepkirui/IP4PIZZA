@@ -70,92 +70,70 @@
         <div class="controls-top text-center" id="Order-now">
           <h3 class="h1-reponsive-text text-uppercase font-weight-bold pulse"><strong>Order Here</h3>
         </div>
-          <h3>ORDER </h3>
-        <div class="row">
-          <div class="col-md-6">
-            <form action="">
-                <label for="select">Flavor</label>
+        <div class="order row">
+             <div class="col-md-6">
+                 <h3>Enter your order details below <br>
+                     Fill in the form </h3>
+                 <form action="" id="pizzainfo">
+                   <label for="select">Select Your Flavor</label>
                 <select class="browser-default custom-select custom-select-md mb-3 name">
-                  <option value="Margherita">Margherita</option>
-                  <option value="Peperoni Pizza">Peperoni</option>
-                  <option value="BBQ Chicken">BBQ Chicken</option>
-                  <option value="Hawaiian Pizza">Hawaiian Pizza</option>
-                  <option value="Meat-lovers pizza">Meat-lovers pizza</option>
-              </select>
-              <label for="select">Size</label>
-              <select class="browser-default custom-select custom-select-md mb-3" id="size">
-                <option selected value="0">Select size here</option>
-                <option value="large">Extre Large -- sh. 1200</option>
-                <option value="large">Large -- sh. 1000</option>
-                <option value="medium">Medium -- sh. 700</option>
-                <option value="small">Small -- sh. 550</option>
-              </select>
-              <label for="crust">Crust</label>
-                <select class="browser-default custom-select custom-select-md mb-3" id="crust">
-                    <option selected value="0">Select your preferred crust!</option>
-                  <option value="Crispy">Thin -- sh. 100</option>
-                  <option value="Stuffed">Thick -- sh. 150</option>
-                  <option value="Gluten-free">Deep-- sh. 150</option>
-                  <option value="Gluten-free">Cheese Filled-- sh. 180</option>
-                  <option value="Gluten-free">stuffed-- sh. 200</option>
+                  <!-- <option selected value="choose">Choose your flavor</option> -->
+                  <option value="Margherita Pizza">Margherita Pizza</option>
+                  <option value="Peperoni Pizza">Peperoni Pizza</option>
+                  <option value="BBQ Pizza">BBQ Chicken Pizza</option>
+                  <option value="Hawaian Pizza">Hawaian Pizza</option>
+                  <option value="Sunchoke Pizza">Sunchoke Pizza</option>
+                  <option value="Meat Lovers Pizza">Meat Lovers Pizza</option>
                 </select>
-                <label for="Toppings">Toppings at sh. 50 each</label><br>
-                <div class="custom-control custom-checkbox custom-control-oneline">
-                  <input type="checkbox" class="custom-control-input" id="Broccoli" value="Broccoli" name="toppings">
-                  <label class="custom-control-label" for="Broccoli">Sausage</label>
-                </div>
-                <div class="custom-control custom-checkbox custom-control-oneline">
-                  <input type="checkbox" class="custom-control-input" id="Bacon" value="Bacon" name="toppings">
-                  <label class="custom-control-label" for="Bacon">Bacon</label>
-                </div>
-                <div class="custom-control custom-checkbox custom-control-oneline">
-                  <input type="radio" class="custom-control-input" id="Zucchini" value="Zucchini" name="toppings">
-                  <label class="custom-control-label" for="Zucchini">Zucchini</label>
-                </div>
-                <div class="custom-control custom-checkbox custom-control-oneline">
-                  <input type="radio" class="custom-control-input" id="Cheese" value="Cheese" name="toppings">
-                  <label class="custom-control-label" for="Cheese">Cheese</label>
-                </div>
-                <div class="custom-control custom-checkbox custom-control-oneline">
-                  <input type="radio" class="custom-control-input" id="spinach" value="spinach" name="toppings">
-                  <label class="custom-control-label" for="spinach">spinach</label>
-                </div>
-                <button type="submit" class="btn">ORDER</button>
-                <div class="col-sm-10">
-           <div id="information">
-             <p>Dear customer we have received your order.</p>
-             <p>Your order will be ready soon</p>
-             <p>Contact us in case of comments or complains</p>
-             <p>We value your feedback dear customer</p>
-             
-           </div>
-                <div class="cart">
-                  <h1>CART</h1>
-                  <table style="width:100%">
-                     <tr>
-                      <th>NAME</th>
-                      <th>SIZE</th>
-                      <th>CRUST</th>
-                      <th>TOPPING</th>
-                      <th>TOTAL</th>
-                   </tr>
-                   <tbody id="ordersmade">
-                    <tr>
-                      <td id="pizzaname"></td>
-                      <td id="pizzasize"></td>
-                      <td id="pizzacrust"></td>
-                      <td id="pizzatopping"></td>
-                      <td id="totals"></td>
-                    </tr>
-                  </tbody>
-                </table>
+                     <label for="">Choose your pizza size</label>
+                     <select class="form-control" name="size" id="size">
+                        <option value="1200">Large @ ksh 1200</option>
+                         <option value="900">Medium @ ksh 800</option>
+                         <option value="600">Small @ ksh 550</option>
+                     </select>
+                     <label for="">Choose your desired crust type</label>
+                     <select class="form-control" name="" id="crust">
+                         <option value="230" name="crust">Thin crust @ ksh230
+                         <option value="250" name="crust">Thick crust @ ksh 250
+                         <option value="300" name="crust">Deep crust @ ksh 300
+                        <option value="300" name="crust">Glutten free crust @ ksh 300
+                        <option value="300" name="crust">Crispy crust @ ksh 300
+                     </select>
+                     <label for="">Choose your Desired toppings</label> <br>
+                     <input value="150" type="checkbox" id="toppingone">Broccoli
+                     <input value="150" type="checkbox" id="toppingone">Bacon
+                     <input value="150" type="checkbox" id="toppingone">Zucchini
+                     <input value="150" type="checkbox" id="toppingone">Cheese
+                     <input value="150" type="checkbox" id="toppingone">Mozarella Cheese <br>
+                     <label for="">Input Quantity</label>
+                     <input class="form-control form-group" type="text" id="numberofpizza">
+                     <button name="button" type="submit" id="submit" value="Check-Out"
+                         onclick="calctotalPrice()">Submit</button>
 
-                </div>
+                 </form>
+             </div>
 
-            </form>
-          </div>
+
+             <div class="col-md-6">
+                 <div id="formlocation">
+                     <h3>For delivery services,enter your location details below</h3>
+                     <form id="delivery">
+                         <label for="name">Name</label>
+                         <input class="form-control" type="text" name="" id="name" required="required">
+                         <label for="location">Location</label>
+                         <input class="form-control" type="text" id="location" placeholder="Kericho..."><br>
+                          <input class="form-control" type="text" id="email" placeholder="maureenchepkirui005@gmail.com...">
+                         <label for="phonenumber">Phone Number</label>
+                         <input class="form-control" type="tel" placeholder="0717452789" id="number"> <br>
+                         <button type="submit" name="button" id="submit">submit</button>
+                     </form>
+                 </div>
+             </div>
+         </div>
+        
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="JS/scripts.js"></script>
 </body>
 </html>
