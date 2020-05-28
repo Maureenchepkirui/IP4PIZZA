@@ -1,1 +1,16 @@
+#intro{
+  background-image: url("../images/intro.jpg");
+  background-size: cover;
+   background-repeat: no-repeat;
+   color: red;
+   text-align: center;
+   text-transform: uppercase;
+   padding-top: 230px;
+   height: 600px;
+   font-family: Calligraffitti;
+ }
 
+}
+h1{
+  color:
+}
