@@ -10,7 +10,7 @@ function getCostPerCrust() {
     return parseInt(selectedCrust);
 }
 function getQuantity() {
-    var selectedNumber = document.getElementById("numberofpizza").value;
+    var selectedNumber = document.getElementById("pizzaquantity").value;
     return parseInt(selectedNumber);
 }
 function getType() {
@@ -19,7 +19,7 @@ function getType() {
 }
 function toppingss() {
     var mushroom = 0;
-    var addMushroom = document.getElementById("toppingone");
+    var addMushroom = document.getElementById("tops");
     if (addMushroom.checked === true) {
         mushroom = 150;
     }
@@ -43,7 +43,7 @@ function calctotalPrice(e) {
 
 
 $(document).ready(function () {
-    $("#delivery").submit(function () {
+    $("#home").submit(function () {
 
         var name = $("input#name").val();
         var number = $("input#number").val();
