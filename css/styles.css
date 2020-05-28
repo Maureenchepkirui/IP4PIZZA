@@ -7,7 +7,9 @@
   background-image: url("../images/intro.jpg");
   background-size: cover;
    background-repeat: no-repeat;
-   color: red;
+   color: white;
+   font-weight: bold;
+
    text-align: center;
    text-transform: uppercase;
    padding-top: 230px;
@@ -17,5 +19,7 @@
 
 }
 h1{
-  color:
+  color:red;
+  font-family: Calligraffitti;
+
 }
