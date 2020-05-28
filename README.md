@@ -10,6 +10,7 @@ MAUREEN CHEPKIRUI BETT
 
  A web application for Crazy Pizza Place where  customers order different sizes of pizzas with one or more toppings.
 ## Screenshot
+![](https://github.com/Maureenchepkirui/IP4PIZZA/blob/master/images/tamtam.png)
 
 
 
