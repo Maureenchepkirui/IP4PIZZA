@@ -1,3 +1,8 @@
+
+@import url('https://fonts.googleapis.com/css?family=Alegreya+SC|Belleza|Calligraffitti|Chonburi|Forum|Imprima&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Alegreya+SC|Belleza|Calligraffitti|Carter+One|Chonburi|Forum|Imprima&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Amarante|Elsie|Paprika&display=swap');
+
 #intro{
   background-image: url("../images/intro.jpg");
   background-size: cover;
