@@ -14,7 +14,16 @@
    height: 600px;
    font-family: Calligraffitti;
  }
+ .menu {
 
+  color: yellow;
+  text-shadow: 6px 6px green;
+  font-family: Calligraffitti;
+  font-size: 30px;
+  }
+  body{
+    font-family: Calligraffitti;
+  }
 }
 h1{
   color:red;
