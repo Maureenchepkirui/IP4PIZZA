@@ -26,3 +26,7 @@ h1{
 body{
   background-color: red;
 }
+.btn{
+  color: white;
+  border-color: black;
+}
