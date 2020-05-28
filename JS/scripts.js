@@ -50,8 +50,7 @@ $(document).ready(function () {
         var location = $("input#location").val();
 
         alert("Hey!" + name + ". Tam Tam Pizza has received your order and it will soon be delivered to you at " +  location + " within one hour.Delivery will cost an extra sh 200 payable on arrivel.Thank you for choosing us.");
-        // $(this).get(0).reset();
-        //  event.preventDefault();
+        
     });
 
 });
