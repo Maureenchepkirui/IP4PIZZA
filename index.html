@@ -53,6 +53,7 @@
   <div class="container">
     <div class="menu" id="menu">
          <div class=" text">
+           <h1>MENU</h1>
             <ul>
               <li class="reponsive-text text-uppercase font-weight-bold pulse"><strong>Margherita Pizza</strong></li>
               <li class="reponsive-text text-uppercase font-weight-bold pulse"><strong>Pepperoni Pizza</strong></li>
@@ -63,6 +64,44 @@
          </div>
      </div>
  </div>
+ <div class="back">
+     <div class="container-fluid order" id="make-order">
+      <div class="order-overlay">
+        <div class="controls-top text-center" id="Order-now">
+          <h3 class="h1-reponsive-text text-uppercase font-weight-bold pulse"><strong>Order Here</h3>
+        </div>
+          <h3>ORDER </h3>
+        <div class="row">
+          <div class="col-md-6">
+            <form action="">
+                <label for="select">Select Your Flavor</label>
+                <select class="browser-default custom-select custom-select-md mb-3 name">
+                  <option value="Margherita">Margherita</option>
+                  <option value="Peperoni Pizza">Peperoni</option>
+                  <option value="BBQ Chicken">BBQ Chicken</option>
+                  <option value="Hawaiian Pizza">Hawaiian Pizza</option>
+                  <option value="Meat-lovers pizza">Meat-lovers pizza</option>
+              </select>
+              <label for="select">Select Size</label>
+              <select class="browser-default custom-select custom-select-md mb-3" id="size">
+                <option selected value="0">Select size here</option>
+                <option value="large">Extre Large -- sh. 1200</option>
+                <option value="large">Large -- sh. 1000</option>
+                <option value="medium">Medium -- sh. 700</option>
+                <option value="small">Small -- sh. 550</option>
+              </select>
+              <label for="crust">Choose your favorite Crust!</label>
+                <select class="browser-default custom-select custom-select-md mb-3" id="crust">
+                    <option selected value="0">Select your preferred crust!</option>
+                  <option value="Crispy">Crispy -- sh. 200</option>
+                  <option value="Stuffed">Stuffed -- sh. 150</option>
+                  <option value="Gluten-free">Gluten-free-- sh. 180</option>
+                </select>
+              <label for="Toppings">Select Your Toppings at sh. 50 each</label><br>
+                <div class="custom-control custom-checkbox custom-control-oneline">
+                  <input type="checkbox" class="custom-control-input" id="Sausage" value="Sausage" name="toppings">
+                  <label class="custom-control-label" for="Sausage">Sausage</label>
+                </div>
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
