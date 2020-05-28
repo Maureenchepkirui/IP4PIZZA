@@ -1,3 +1,5 @@
+var total,crust_cost,size_cost;
+
 function getCostPerSize() {
     var selectedSize = document.getElementById("size").value;
     return parseInt(selectedSize);
@@ -11,7 +13,11 @@ function getQuantity() {
     var selectedNumber = document.getElementById("numberofpizza").value;
     return parseInt(selectedNumber);
 }
-function mushrooms() {
+function getType() {
+    var selectedType = document.getElementById("type").value;
+    return parseInt(selectedType);
+}
+function toppingss() {
     var mushroom = 0;
     var addMushroom = document.getElementById("toppingone");
     if (addMushroom.checked === true) {
@@ -20,45 +26,13 @@ function mushrooms() {
     return parseInt(mushroom);
 }
 
-function sausages() {
-    var sausage = 0;
-    var addsausage = document.getElementById("toppingone");
-    if (addsausage.checked === true) {
-        sausage = 140;
-    }
-    return parseInt(sausage);
-}
-function onions() {
-    var onion = 0;
-    var addonions = document.getElementById("toppingone");
-    if (addMushroom.checked === true) {
-        onion = 130;
-    }
-    return parseInt(onion);
-}
-function tikkaSaucee() {
-    var tikkaSauce = 0;
-    var addtikkaSauce = document.getElementById("toppingone");
-    if (addtikkaSauce.checked === true) {
-        tikkaSauce = 120;
-    }
-    return parseInt(tikkaSauce);
-}
-function mozarellaCheese() {
-    var cheese = 0;
-    var addmozarellaCheese = document.getElementById("toppingone");
-    if (addmozarellaCheese.checked === true) {
-        cheese = 110;
-    }
-    return parseInt(cheese);
-}
 
 function calctotalPrice(e) {
     event.preventDefault();
-    var totalPrice = (getCostPerSize() + getCostPerCrust() + mushrooms()) * (getQuantity());
+    var totalPrice = (getCostPerSize() + getCostPerCrust() + toppingss()) * (getQuantity());
 
         console.log(totalPrice);
-    alert("Your order of " + getQuantity() + " pizzas has been processed.Your total amount payable is " + totalPrice +"." )
+    alert("Dear customer you have ordered an amount of " + getQuantity() +  " pizzas and the amount you owe us is " + totalPrice +"." )
 
 }
 
@@ -78,6 +52,20 @@ $(document).ready(function () {
         alert("Hey!" + name + ". Tam Tam Pizza has received your order and it will soon be delivered to you at " +  location + " within one hour.Delivery will cost an extra sh 200 payable on arrivel.Thank you for choosing us.");
         // $(this).get(0).reset();
         //  event.preventDefault();
+    });
+
+});
+// cart//
+$(document).ready(function () {
+    $("#pizzainfo").submit(function () {
+
+        var type = $("optiont#type").val();
+        var quantity = $("input#number").val();
+        var crust = $("optiont#crust").val();
+        var topping = $("option#toppingone").val();
+        append("This is the summary of your order" + type + crust + yy)
+
+
     });
 
 });
